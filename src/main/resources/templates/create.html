@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+<head><title>Create Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+<div layout:fragment="content" class="row">
+    <div class="col-xs-8 col-md-8"><h3><a href="/product" class="btn btn-lg btn-primary"><span
+            class="glyphicon glyphicon-list"></span> Product</a></h3>
+        <h2>Create Product</h2>
+        <form action="/save">
+            <div class="form-group">
+                <label for="email">Product Name:</label>
+                <input type="text" class="form-control" name="prodName"/>
+            </div>
+            <div class="form-group"><label for="email">Product Description</label><textarea class="form-control"
+                                                                                            name="prodDesc" cols="60"
+                                                                                            rows="3"></textarea></div>
+            <div class="form-group"><label for="email">Product Price</label><input type="number" class="form-control"
+                                                                                   name="prodPrice"/></div>
+            <div class="form-group"><label for="email">Product Image URL:</label><input type="url" class="form-control"
+                                                                                        name="prodImage"/></div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
